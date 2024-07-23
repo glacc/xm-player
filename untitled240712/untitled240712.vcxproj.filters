@@ -1,0 +1,156 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="源文件\UI">
+      <UniqueIdentifier>{1941cbc1-26f9-4ff1-885b-860aa4f5449f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\UI\Elements">
+      <UniqueIdentifier>{276eb54c-8f83-450c-ad39-7f767fe827bc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\Screens">
+      <UniqueIdentifier>{70e14724-6388-416a-8ec8-f4b7a5448e47}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\Test">
+      <UniqueIdentifier>{b2c59f82-cf63-43cf-95ff-43915b9bf19a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\xmPlayer">
+      <UniqueIdentifier>{a691cc53-782e-4a27-8448-47375607f958}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\Utils">
+      <UniqueIdentifier>{dfdad3f3-5c08-4428-8d4b-64f82f1f2887}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="UI\Element.cpp">
+      <Filter>源文件\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="UI\Event.cpp">
+      <Filter>源文件\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="UI\Globals.cpp">
+      <Filter>源文件\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="UI\Root.cpp">
+      <Filter>源文件\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="UI\Screen.cpp">
+      <Filter>源文件\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="UI\Elements\Button.cpp">
+      <Filter>源文件\UI\Elements</Filter>
+    </ClCompile>
+    <ClCompile Include="UI\Elements\Label.cpp">
+      <Filter>源文件\UI\Elements</Filter>
+    </ClCompile>
+    <ClCompile Include="UI\Elements\Viewport.cpp">
+      <Filter>源文件\UI\Elements</Filter>
+    </ClCompile>
+    <ClCompile Include="Test\SoundStream.cpp">
+      <Filter>源文件\Test</Filter>
+    </ClCompile>
+    <ClCompile Include="Screens\MainScreen.cpp">
+      <Filter>源文件\Screens</Filter>
+    </ClCompile>
+    <ClCompile Include="xmPlayer\xmPlayer.cpp">
+      <Filter>源文件\xmPlayer</Filter>
+    </ClCompile>
+    <ClCompile Include="Program.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Screens\PatternViewer.cpp">
+      <Filter>源文件\Screens</Filter>
+    </ClCompile>
+    <ClCompile Include="Screens\OrderTable.cpp">
+      <Filter>源文件\Screens</Filter>
+    </ClCompile>
+    <ClCompile Include="Utils\DrawTextMonospace.cpp">
+      <Filter>源文件\Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="Global.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Screens\Scope.cpp">
+      <Filter>源文件\Screens</Filter>
+    </ClCompile>
+    <ClCompile Include="UI\Elements\CheckBox.cpp">
+      <Filter>源文件\UI\Elements</Filter>
+    </ClCompile>
+    <ClCompile Include="UI\Elements\Slider.cpp">
+      <Filter>源文件\UI\Elements</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="UI\Element.hpp">
+      <Filter>源文件\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="UI\Elements.hpp">
+      <Filter>源文件\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="UI\Event.hpp">
+      <Filter>源文件\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="UI\Globals.hpp">
+      <Filter>源文件\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="UI\Root.hpp">
+      <Filter>源文件\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="UI\Screen.hpp">
+      <Filter>源文件\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="UI\Elements\Button.hpp">
+      <Filter>源文件\UI\Elements</Filter>
+    </ClInclude>
+    <ClInclude Include="UI\Elements\Label.hpp">
+      <Filter>源文件\UI\Elements</Filter>
+    </ClInclude>
+    <ClInclude Include="UI\Elements\Viewport.hpp">
+      <Filter>源文件\UI\Elements</Filter>
+    </ClInclude>
+    <ClInclude Include="Test\SoundStream.hpp">
+      <Filter>源文件\Test</Filter>
+    </ClInclude>
+    <ClInclude Include="Screens\MainScreen.hpp">
+      <Filter>源文件\Screens</Filter>
+    </ClInclude>
+    <ClInclude Include="xmPlayer\xmPlayer.hpp">
+      <Filter>源文件\xmPlayer</Filter>
+    </ClInclude>
+    <ClInclude Include="Screens\PatternViewer.hpp">
+      <Filter>源文件\Screens</Filter>
+    </ClInclude>
+    <ClInclude Include="Screens\OrderTable.hpp">
+      <Filter>源文件\Screens</Filter>
+    </ClInclude>
+    <ClInclude Include="Utils\DrawTextMonospace.hpp">
+      <Filter>源文件\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Global.hpp">
+      <Filter>源文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Screens\Scope.hpp">
+      <Filter>源文件\Screens</Filter>
+    </ClInclude>
+    <ClInclude Include="UI\Elements\CheckBox.hpp">
+      <Filter>源文件\UI\Elements</Filter>
+    </ClInclude>
+    <ClInclude Include="UI\Elements\Slider.hpp">
+      <Filter>源文件\UI\Elements</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+</Project>
