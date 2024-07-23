@@ -25,8 +25,8 @@ int main()
 {
 	// Initalize window and font
 	const std::string winTitle = "XM Player (Glacc)";
-	const int winWidth = 1024;
-	const int winHeight = 768;
+	const int winWidth = 1276;
+	const int winHeight = 1026;
 	window = new sf::RenderWindow(sf::VideoMode(winWidth, winHeight), winTitle, sf::Style::Resize | sf::Style::Titlebar | sf::Style::Close);
 	window->setFramerateLimit(60);
 
@@ -42,7 +42,12 @@ int main()
 	UI::Globals::root = new UI::Root(window, &Screens::Main::mainScreen);
 	Screens::Main::mainScreen.renderTarget = UI::Globals::root->rootViewport->viewportRenderTexture;
 
-	bool drag = false;
+	/* Custom */
+
+	bool isLoadedOld = Screens::Main::xmPlayer.IsLoaded();
+
+	/* -- End */
+
 	while (window->isOpen())
 	{
 		UI::Event::UpdateBeforePoll();
@@ -67,14 +72,37 @@ int main()
 
 		window->clear(bgColor);
 
+		/* Custom */
+
+		if (Screens::Main::xmPlayer.IsLoaded() != isLoadedOld)
+		{
+			if (Screens::Main::xmPlayer.IsLoaded())
+			{
+				Glacc::XMPlayer::Stat stat;
+				Screens::Main::xmPlayer.GetCurrentStat(stat);
+				window->setTitle(winTitle + " - " + stat.songName);
+			}
+			else
+				window->setTitle(winTitle);
+		}
+
+		/* -- End */
+
 		UI::Globals::root->Draw();
 
 		window->display();
+
+		/* Custom */
+
+		isLoadedOld = Screens::Main::xmPlayer.IsLoaded();
+
+		/* -- End */
 
 		if (UI::Globals::exitReq)
 			window->close();
 	}
 
+	Screens::Main::xmPlayer.CleanUp();
 	delete window, UI::Globals::font, UI::Globals::root;
 
 	return 0;

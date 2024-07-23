@@ -48,7 +48,7 @@ void PatternViewer::PatternViewerScreen::Init()
 	strInstruction += "Scroll or drag the order table on the top left to seek.\n\n";
 	strInstruction += "Click the scopes to mute/unmute channels.\n\n";
 	strInstruction += "Click this window to toggle detailed pattern view.\n\n\n\n";
-	strInstruction += "(Work in progress)\nGlacc 2024.07.18 qwq";
+	strInstruction += "(Work in progress)\nGlacc 2024.07.23 qwq";
 	lblInstruction = UI::Elements::Label(strInstruction,
 		UI::Globals::font, 24, UI::Element::TopLeft, 64, 64);
 
