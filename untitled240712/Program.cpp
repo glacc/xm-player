@@ -24,10 +24,9 @@ void Exit()
 int main()
 {
 	// Initalize window and font
-	const std::string winTitle = "XM Player (Glacc)";
 	const int winWidth = 1276;
 	const int winHeight = 1026;
-	window = new sf::RenderWindow(sf::VideoMode(winWidth, winHeight), winTitle, sf::Style::Resize | sf::Style::Titlebar | sf::Style::Close);
+	window = new sf::RenderWindow(sf::VideoMode(winWidth, winHeight), Glacc::Global::winTitle, sf::Style::Resize | sf::Style::Titlebar | sf::Style::Close);
 	window->setFramerateLimit(60);
 
 	// Load font
@@ -44,6 +43,7 @@ int main()
 
 	/* Custom */
 
+	Glacc::Global::window = window;
 	bool isLoadedOld = Screens::Main::xmPlayer.IsLoaded();
 
 	/* -- End */
@@ -74,6 +74,7 @@ int main()
 
 		/* Custom */
 
+		/*
 		if (Screens::Main::xmPlayer.IsLoaded() != isLoadedOld)
 		{
 			if (Screens::Main::xmPlayer.IsLoaded())
@@ -85,6 +86,7 @@ int main()
 			else
 				window->setTitle(winTitle);
 		}
+		*/
 
 		/* -- End */
 

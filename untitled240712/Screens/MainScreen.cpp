@@ -59,11 +59,17 @@ namespace Screens
 						mainScreen.lblMsg.label = std::string("").append("Module ").append(filePath).append(" loaded");
 						mainScreen.lblMsg.UpdateSettings();
 						PatternViewer::patternViewerScreen.lblInstruction.visible = false;
+
+						Glacc::XMPlayer::Stat stat;
+						Screens::Main::xmPlayer.GetCurrentStat(stat);
+						Glacc::Global::window->setTitle(Glacc::Global::winTitle + " - " + stat.songName);
 					}
 					else
 					{
 						mainScreen.lblMsg.label = std::string("").append("Unable to load module ").append(filePath);
 						mainScreen.lblMsg.UpdateSettings();
+
+						Glacc::Global::window->setTitle(Glacc::Global::winTitle);
 					}
 
 					PatternViewer::patternViewerScreen.chOffset = 0;

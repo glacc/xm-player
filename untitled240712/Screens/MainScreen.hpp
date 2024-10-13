@@ -1,5 +1,7 @@
 #pragma once
 
+#include "../Global.hpp"
+
 #include "../UI/Screen.hpp"
 #include "../UI/Elements.hpp"
 #include "../UI/Globals.hpp"
